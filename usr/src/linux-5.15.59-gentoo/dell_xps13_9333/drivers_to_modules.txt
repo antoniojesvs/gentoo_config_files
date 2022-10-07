@@ -1,0 +1,475 @@
+---
+driver acpi_als
+drivers/iio/light/Makefile:obj-$(CONFIG_ACPI_ALS)		+= acpi-als.o
+---
+driver aesni_intel
+arch/x86/crypto/Makefile:obj-$(CONFIG_CRYPTO_AES_NI_INTEL) += aesni-intel.o
+---
+driver af_alg
+crypto/Makefile:obj-$(CONFIG_CRYPTO_USER_API) += af_alg.o
+---
+driver algif_hash
+crypto/Makefile:obj-$(CONFIG_CRYPTO_USER_API_HASH) += algif_hash.o
+---
+driver algif_skcipher
+crypto/Makefile:obj-$(CONFIG_CRYPTO_USER_API_SKCIPHER) += algif_skcipher.o
+---
+driver atkbd
+drivers/input/keyboard/Makefile:obj-$(CONFIG_KEYBOARD_ATKBD)		+= atkbd.o
+---
+driver bluetooth
+net/bluetooth/Makefile:obj-$(CONFIG_BT)	+= bluetooth.o
+---
+driver bnep
+net/bluetooth/bnep/Makefile:obj-$(CONFIG_BT_BNEP) += bnep.o
+---
+driver bpf_preload
+kernel/bpf/preload/Makefile:obj-$(CONFIG_BPF_PRELOAD_UMD) += bpf_preload.o
+---
+driver btbcm
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_BCM)		+= btbcm.o
+---
+driver btintel
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_INTEL)		+= btintel.o
+---
+driver btmtk
+---
+driver btrtl
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_RTL)		+= btrtl.o
+---
+driver btusb
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_HCIBTUSB)	+= btusb.o
+---
+driver cdrom
+drivers/cdrom/Makefile:obj-$(CONFIG_CDROM)	+= cdrom.o
+---
+driver cec
+drivers/media/cec/core/Makefile:obj-$(CONFIG_CEC_CORE) += cec.o
+drivers/ras/Makefile:obj-$(CONFIG_RAS_CEC)	+= cec.o
+---
+driver cfg80211
+net/wireless/Makefile:obj-$(CONFIG_CFG80211) += cfg80211.o
+---
+driver cmac
+crypto/Makefile:obj-$(CONFIG_CRYPTO_CMAC) += cmac.o
+---
+driver coretemp
+drivers/hwmon/Makefile:obj-$(CONFIG_SENSORS_CORETEMP)	+= coretemp.o
+---
+driver crc16
+lib/Makefile:obj-$(CONFIG_CRC16)	+= crc16.o
+---
+driver crc32c_generic
+crypto/Makefile:obj-$(CONFIG_CRYPTO_CRC32C) += crc32c_generic.o
+---
+driver crc32c_intel
+arch/x86/crypto/Makefile:obj-$(CONFIG_CRYPTO_CRC32C_INTEL) += crc32c-intel.o
+---
+driver crc32_pclmul
+arch/x86/crypto/Makefile:obj-$(CONFIG_CRYPTO_CRC32_PCLMUL) += crc32-pclmul.o
+---
+driver crct10dif_pclmul
+arch/x86/crypto/Makefile:obj-$(CONFIG_CRYPTO_CRCT10DIF_PCLMUL) += crct10dif-pclmul.o
+---
+driver cryptd
+crypto/Makefile:obj-$(CONFIG_CRYPTO_CRYPTD) += cryptd.o
+---
+driver crypto_simd
+crypto/Makefile:obj-$(CONFIG_CRYPTO_SIMD) += crypto_simd.o
+---
+driver crypto_user
+crypto/Makefile:obj-$(CONFIG_CRYPTO_USER) += crypto_user.o
+---
+driver dcdbas
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DCDBAS)			+= dcdbas.o
+---
+driver dell_laptop
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DELL_LAPTOP)		+= dell-laptop.o
+---
+driver dell_rbtn
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DELL_RBTN)			+= dell-rbtn.o
+---
+driver dell_smbios
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DELL_SMBIOS)		+= dell-smbios.o
+---
+driver dell_smm_hwmon
+drivers/hwmon/Makefile:obj-$(CONFIG_SENSORS_DELL_SMM)	+= dell-smm-hwmon.o
+---
+driver dell_wmi
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DELL_WMI)			+= dell-wmi.o
+---
+driver dell_wmi_descriptor
+drivers/platform/x86/dell/Makefile:obj-$(CONFIG_DELL_WMI_DESCRIPTOR)	+= dell-wmi-descriptor.o
+---
+driver dm_mod
+drivers/md/Makefile:obj-$(CONFIG_BLK_DEV_DM)	+= dm-mod.o
+---
+driver drm_buddy
+---
+driver drm_display_helper
+---
+driver ecdh_generic
+crypto/Makefile:obj-$(CONFIG_CRYPTO_ECDH) += ecdh_generic.o
+---
+driver ext4
+fs/ext4/Makefile:obj-$(CONFIG_EXT4_FS) += ext4.o
+---
+driver fuse
+fs/fuse/Makefile:obj-$(CONFIG_FUSE_FS) += fuse.o
+---
+driver ghash_clmulni_intel
+arch/x86/crypto/Makefile:obj-$(CONFIG_CRYPTO_GHASH_CLMUL_NI_INTEL) += ghash-clmulni-intel.o
+---
+driver hid_multitouch
+drivers/hid/Makefile:obj-$(CONFIG_HID_MULTITOUCH)	+= hid-multitouch.o
+---
+driver hid_rmi
+drivers/hid/Makefile:obj-$(CONFIG_HID_RMI)		+= hid-rmi.o
+---
+driver i2c_hid
+drivers/hid/i2c-hid/Makefile:obj-$(CONFIG_I2C_HID_CORE)			+= i2c-hid.o
+---
+driver i2c_hid_acpi
+drivers/hid/i2c-hid/Makefile:obj-$(CONFIG_I2C_HID_ACPI)			+= i2c-hid-acpi.o
+---
+driver i2c_i801
+drivers/i2c/busses/Makefile:obj-$(CONFIG_I2C_I801)		+= i2c-i801.o
+---
+driver i2c_smbus
+drivers/i2c/Makefile:obj-$(CONFIG_I2C_SMBUS)		+= i2c-smbus.o
+---
+driver i8042
+drivers/input/serio/Makefile:obj-$(CONFIG_SERIO_I8042)	+= i8042.o
+---
+driver i915
+drivers/gpu/drm/i915/Makefile:obj-$(CONFIG_DRM_I915) += i915.o
+---
+driver industrialio
+drivers/iio/Makefile:obj-$(CONFIG_IIO) += industrialio.o
+---
+driver industrialio_triggered_buffer
+drivers/iio/buffer/Makefile:obj-$(CONFIG_IIO_TRIGGERED_BUFFER) += industrialio-triggered-buffer.o
+---
+driver intel_cstate
+arch/x86/events/intel/Makefile:obj-$(CONFIG_PERF_EVENTS_INTEL_CSTATE)	+= intel-cstate.o
+---
+driver intel_gtt
+drivers/char/agp/Makefile:obj-$(CONFIG_INTEL_GTT)		+= intel-gtt.o
+---
+driver intel_pmc_bxt
+drivers/mfd/Makefile:obj-$(CONFIG_MFD_INTEL_PMC_BXT)	+= intel_pmc_bxt.o
+---
+driver intel_powerclamp
+drivers/thermal/intel/Makefile:obj-$(CONFIG_INTEL_POWERCLAMP)	+= intel_powerclamp.o
+---
+driver intel_rapl_common
+drivers/powercap/Makefile:obj-$(CONFIG_INTEL_RAPL_CORE) += intel_rapl_common.o
+---
+driver intel_rapl_msr
+drivers/powercap/Makefile:obj-$(CONFIG_INTEL_RAPL) += intel_rapl_msr.o
+---
+driver intel_smartconnect
+drivers/platform/x86/intel/Makefile:obj-$(CONFIG_INTEL_SMARTCONNECT)	+= intel-smartconnect.o
+---
+driver intel_uncore
+arch/x86/events/intel/Makefile:obj-$(CONFIG_PERF_EVENTS_INTEL_UNCORE)	+= intel-uncore.o
+---
+driver ip_tables
+net/ipv4/netfilter/Makefile:obj-$(CONFIG_IP_NF_IPTABLES) += ip_tables.o
+---
+driver irqbypass
+virt/lib/Makefile:obj-$(CONFIG_IRQ_BYPASS_MANAGER) += irqbypass.o
+---
+driver isofs
+fs/isofs/Makefile:obj-$(CONFIG_ISO9660_FS) += isofs.o
+---
+driver iTCO_vendor_support
+drivers/watchdog/Makefile:obj-$(CONFIG_ITCO_WDT) += iTCO_vendor_support.o
+---
+driver iTCO_wdt
+drivers/watchdog/Makefile:obj-$(CONFIG_ITCO_WDT) += iTCO_wdt.o
+---
+driver iwlmei
+---
+driver iwlmvm
+drivers/net/wireless/intel/iwlwifi/mvm/Makefile:obj-$(CONFIG_IWLMVM)   += iwlmvm.o
+---
+driver iwlwifi
+drivers/net/wireless/intel/iwlwifi/Makefile:obj-$(CONFIG_IWLWIFI)	+= iwlwifi.o
+---
+driver jbd2
+fs/jbd2/Makefile:obj-$(CONFIG_JBD2) += jbd2.o
+---
+driver joydev
+drivers/input/Makefile:obj-$(CONFIG_INPUT_JOYDEV)	+= joydev.o
+---
+driver kfifo_buf
+drivers/iio/buffer/Makefile:obj-$(CONFIG_IIO_KFIFO_BUF) += kfifo_buf.o
+---
+driver kvm
+kernel/entry/Makefile:obj-$(CONFIG_KVM_XFER_TO_GUEST_WORK)	+= kvm.o
+arch/mips/kvm/Makefile:obj-$(CONFIG_KVM)	+= kvm.o
+arch/s390/kvm/Makefile:obj-$(CONFIG_KVM) += kvm.o
+arch/x86/kernel/Makefile:obj-$(CONFIG_KVM_GUEST)		+= kvm.o kvmclock.o
+arch/x86/kvm/Makefile:obj-$(CONFIG_KVM)	+= kvm.o
+arch/arm64/kvm/Makefile:obj-$(CONFIG_KVM) += kvm.o
+arch/powerpc/kernel/Makefile:obj-$(CONFIG_KVM_GUEST)		+= kvm.o kvm_emul.o
+arch/powerpc/kvm/Makefile:obj-$(CONFIG_KVM_E500V2) += kvm.o
+arch/powerpc/kvm/Makefile:obj-$(CONFIG_KVM_E500MC) += kvm.o
+arch/powerpc/kvm/Makefile:obj-$(CONFIG_KVM_BOOK3S_64) += kvm.o
+arch/powerpc/kvm/Makefile:obj-$(CONFIG_KVM_BOOK3S_32) += kvm.o
+---
+driver kvm_intel
+arch/x86/kvm/Makefile:obj-$(CONFIG_KVM_INTEL)	+= kvm-intel.o
+---
+driver ledtrig_audio
+drivers/leds/trigger/Makefile:obj-$(CONFIG_LEDS_TRIGGER_AUDIO)	+= ledtrig-audio.o
+---
+driver libarc4
+lib/crypto/Makefile:obj-$(CONFIG_CRYPTO_LIB_ARC4)			+= libarc4.o
+---
+driver libcrc32c
+lib/Makefile:obj-$(CONFIG_LIBCRC32C)	+= libcrc32c.o
+---
+driver libps2
+drivers/input/serio/Makefile:obj-$(CONFIG_SERIO_LIBPS2)	+= libps2.o
+---
+driver loop
+drivers/block/Makefile:obj-$(CONFIG_BLK_DEV_LOOP)	+= loop.o
+tools/testing/selftests/powerpc/pmu/Makefile:$(OUTPUT)/count_instructions: loop.S count_instructions.c $(EXTRA_SOURCES)
+tools/testing/selftests/powerpc/pmu/Makefile:$(OUTPUT)/count_stcx_fail: loop.S $(EXTRA_SOURCES)
+---
+driver lpc_ich
+drivers/mfd/Makefile:obj-$(CONFIG_LPC_ICH)		+= lpc_ich.o
+---
+driver mac80211
+net/mac80211/Makefile:obj-$(CONFIG_MAC80211) += mac80211.o
+---
+driver mac_hid
+drivers/macintosh/Makefile:obj-$(CONFIG_MAC_EMUMOUSEBTN)	+= mac_hid.o
+---
+driver mbcache
+fs/Makefile:obj-$(CONFIG_FS_MBCACHE)	+= mbcache.o
+---
+driver mc
+drivers/media/mc/Makefile:obj-$(CONFIG_MEDIA_SUPPORT) += mc.o
+---
+driver mei
+drivers/misc/mei/Makefile:obj-$(CONFIG_INTEL_MEI) += mei.o
+---
+driver mei_hdcp
+drivers/misc/mei/hdcp/Makefile:obj-$(CONFIG_INTEL_MEI_HDCP) += mei_hdcp.o
+---
+driver mei_me
+drivers/misc/mei/Makefile:obj-$(CONFIG_INTEL_MEI_ME) += mei-me.o
+---
+driver mei_pxp
+---
+driver Module
+---
+driver mousedev
+drivers/input/Makefile:obj-$(CONFIG_INPUT_MOUSEDEV)	+= mousedev.o
+---
+driver mtd
+drivers/mtd/Makefile:obj-$(CONFIG_MTD)		+= mtd.o
+drivers/net/ethernet/sfc/Makefile:sfc-$(CONFIG_SFC_MTD)	+= mtd.o
+drivers/net/ethernet/sfc/falcon/Makefile:sfc-falcon-$(CONFIG_SFC_FALCON_MTD)	+= mtd.o
+---
+driver nf_conntrack
+net/netfilter/Makefile:obj-$(CONFIG_NF_CONNTRACK) += nf_conntrack.o
+---
+driver nf_defrag_ipv4
+net/ipv4/netfilter/Makefile:obj-$(CONFIG_NF_DEFRAG_IPV4) += nf_defrag_ipv4.o
+---
+driver nf_defrag_ipv6
+net/ipv6/netfilter/Makefile:obj-$(CONFIG_NF_DEFRAG_IPV6) += nf_defrag_ipv6.o
+---
+driver nf_nat
+net/netfilter/Makefile:obj-$(CONFIG_NF_NAT) += nf_nat.o
+---
+driver nfnetlink
+net/netfilter/Makefile:obj-$(CONFIG_NETFILTER_NETLINK) += nfnetlink.o
+---
+driver nf_reject_ipv4
+net/ipv4/netfilter/Makefile:obj-$(CONFIG_NF_REJECT_IPV4) += nf_reject_ipv4.o
+---
+driver nf_reject_ipv6
+net/ipv6/netfilter/Makefile:obj-$(CONFIG_NF_REJECT_IPV6) += nf_reject_ipv6.o
+---
+driver nf_tables
+net/netfilter/Makefile:obj-$(CONFIG_NF_TABLES)		+= nf_tables.o
+---
+driver nft_chain_nat
+net/netfilter/Makefile:obj-$(CONFIG_NFT_NAT)		+= nft_chain_nat.o
+---
+driver nft_ct
+net/netfilter/Makefile:obj-$(CONFIG_NFT_CT)		+= nft_ct.o
+---
+driver nft_fib
+net/netfilter/Makefile:obj-$(CONFIG_NFT_FIB)		+= nft_fib.o
+---
+driver nft_fib_inet
+net/netfilter/Makefile:obj-$(CONFIG_NFT_FIB_INET)	+= nft_fib_inet.o
+---
+driver nft_fib_ipv4
+net/ipv4/netfilter/Makefile:obj-$(CONFIG_NFT_FIB_IPV4) += nft_fib_ipv4.o
+---
+driver nft_fib_ipv6
+net/ipv6/netfilter/Makefile:obj-$(CONFIG_NFT_FIB_IPV6) += nft_fib_ipv6.o
+---
+driver nft_reject
+net/netfilter/Makefile:obj-$(CONFIG_NFT_REJECT) 	+= nft_reject.o
+---
+driver nft_reject_inet
+net/netfilter/Makefile:obj-$(CONFIG_NFT_REJECT_INET)	+= nft_reject_inet.o
+---
+driver overlay
+drivers/of/unittest-data/Makefile:obj-$(CONFIG_OF_OVERLAY) += overlay.dtb.o \
+drivers/of/Makefile:obj-$(CONFIG_OF_OVERLAY) += overlay.o
+fs/overlayfs/Makefile:obj-$(CONFIG_OVERLAY_FS) += overlay.o
+---
+driver pkcs8_key_parser
+crypto/asymmetric_keys/Makefile:obj-$(CONFIG_PKCS8_PRIVATE_KEY_PARSER) += pkcs8_key_parser.o
+---
+driver psmouse
+drivers/input/mouse/Makefile:obj-$(CONFIG_MOUSE_PS2)			+= psmouse.o
+---
+driver rapl
+arch/x86/events/Makefile:obj-$(CONFIG_PERF_EVENTS_INTEL_RAPL)	+= rapl.o
+---
+driver rfcomm
+net/bluetooth/rfcomm/Makefile:obj-$(CONFIG_BT_RFCOMM) += rfcomm.o
+---
+driver rfkill
+net/rfkill/Makefile:obj-$(CONFIG_RFKILL)		+= rfkill.o
+---
+driver rmi_core
+drivers/input/rmi4/Makefile:obj-$(CONFIG_RMI4_CORE) += rmi_core.o
+---
+driver serio
+drivers/input/serio/Makefile:obj-$(CONFIG_SERIO)		+= serio.o
+---
+driver serio_raw
+drivers/input/serio/Makefile:obj-$(CONFIG_SERIO_RAW)		+= serio_raw.o
+---
+driver snd
+sound/core/Makefile:obj-$(CONFIG_SND) 		+= snd.o
+---
+driver snd_hda_codec
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA) := snd-hda-codec.o
+---
+driver snd_hda_codec_generic
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA_GENERIC) += snd-hda-codec-generic.o
+---
+driver snd_hda_codec_hdmi
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA_CODEC_HDMI) += snd-hda-codec-hdmi.o
+---
+driver snd_hda_codec_realtek
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA_CODEC_REALTEK) += snd-hda-codec-realtek.o
+---
+driver snd_hda_core
+sound/hda/Makefile:obj-$(CONFIG_SND_HDA_CORE) += snd-hda-core.o
+---
+driver snd_hda_intel
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA_INTEL) += snd-hda-intel.o
+---
+driver snd_hrtimer
+sound/core/Makefile:obj-$(CONFIG_SND_HRTIMER)	+= snd-hrtimer.o
+---
+driver snd_hwdep
+sound/core/Makefile:obj-$(CONFIG_SND_HWDEP)		+= snd-hwdep.o
+---
+driver snd_intel_dspcfg
+sound/hda/Makefile:obj-$(CONFIG_SND_INTEL_DSP_CONFIG) += snd-intel-dspcfg.o
+---
+driver snd_intel_sdw_acpi
+sound/hda/Makefile:obj-$(CONFIG_SND_INTEL_SOUNDWIRE_ACPI) += snd-intel-sdw-acpi.o
+---
+driver snd_pcm
+sound/core/Makefile:obj-$(CONFIG_SND_PCM)		+= snd-pcm.o
+---
+driver snd_seq
+sound/core/seq/Makefile:obj-$(CONFIG_SND_SEQUENCER) += snd-seq.o
+---
+driver snd_seq_device
+sound/core/Makefile:obj-$(CONFIG_SND_SEQ_DEVICE)	+= snd-seq-device.o
+---
+driver snd_seq_dummy
+sound/core/seq/Makefile:obj-$(CONFIG_SND_SEQ_DUMMY) += snd-seq-dummy.o
+---
+driver snd_timer
+sound/core/Makefile:obj-$(CONFIG_SND_TIMER)		+= snd-timer.o
+---
+driver soundcore
+sound/Makefile:obj-$(CONFIG_SOUND) += soundcore.o
+---
+driver sparse_keymap
+drivers/input/Makefile:obj-$(CONFIG_INPUT_SPARSEKMAP)	+= sparse-keymap.o
+---
+driver spi_intel
+---
+driver spi_intel_platform
+---
+driver spi_nor
+drivers/mtd/spi-nor/Makefile:obj-$(CONFIG_MTD_SPI_NOR)	+= spi-nor.o
+---
+driver squashfs
+fs/squashfs/Makefile:obj-$(CONFIG_SQUASHFS) += squashfs.o
+---
+driver ttm
+drivers/gpu/drm/ttm/Makefile:obj-$(CONFIG_DRM_TTM) += ttm.o
+---
+driver uas
+drivers/usb/storage/Makefile:obj-$(CONFIG_USB_UAS)		+= uas.o
+---
+driver usbhid
+drivers/hid/usbhid/Makefile:obj-$(CONFIG_USB_HID)		+= usbhid.o
+---
+driver usb_storage
+drivers/usb/storage/Makefile:obj-$(CONFIG_USB_STORAGE)	+= usb-storage.o
+---
+driver uvcvideo
+drivers/media/usb/uvc/Makefile:obj-$(CONFIG_USB_VIDEO_CLASS) += uvcvideo.o
+---
+driver video
+drivers/acpi/Makefile:obj-$(CONFIG_ACPI_VIDEO)	+= video.o
+---
+driver videobuf2_common
+drivers/media/common/videobuf2/Makefile:obj-$(CONFIG_VIDEOBUF2_CORE) += videobuf2-common.o
+---
+driver videobuf2_memops
+drivers/media/common/videobuf2/Makefile:obj-$(CONFIG_VIDEOBUF2_MEMOPS) += videobuf2-memops.o
+---
+driver videobuf2_v4l2
+drivers/media/common/videobuf2/Makefile:obj-$(CONFIG_VIDEOBUF2_V4L2) += videobuf2-v4l2.o
+---
+driver videobuf2_vmalloc
+drivers/media/common/videobuf2/Makefile:obj-$(CONFIG_VIDEOBUF2_VMALLOC) += videobuf2-vmalloc.o
+---
+driver videodev
+drivers/media/v4l2-core/Makefile:obj-$(CONFIG_VIDEO_V4L2) += videodev.o
+---
+driver vivaldi_fmap
+---
+driver vmd
+drivers/pci/controller/Makefile:obj-$(CONFIG_VMD) += vmd.o
+---
+driver wl
+---
+driver wmi
+drivers/platform/x86/Makefile:obj-$(CONFIG_ACPI_WMI)		+= wmi.o
+---
+driver wmi_bmof
+drivers/platform/x86/Makefile:obj-$(CONFIG_WMI_BMOF)		+= wmi-bmof.o
+---
+driver x86_pkg_temp_thermal
+drivers/thermal/intel/Makefile:obj-$(CONFIG_X86_PKG_TEMP_THERMAL)	+= x86_pkg_temp_thermal.o
+---
+driver xhci_pci
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_XHCI_PCI)	+= xhci-pci.o
+---
+driver xhci_pci_renesas
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_XHCI_PCI_RENESAS)	+= xhci-pci-renesas.o
+---
+driver x_tables
+net/netfilter/Makefile:obj-$(CONFIG_NETFILTER_XTABLES) += x_tables.o xt_tcpudp.o

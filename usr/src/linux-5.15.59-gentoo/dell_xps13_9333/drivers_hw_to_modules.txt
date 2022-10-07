@@ -1,0 +1,52 @@
+---
+driver ahci
+drivers/ata/Makefile:obj-$(CONFIG_SATA_AHCI)		+= ahci.o libahci.o
+---
+driver btusb
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_HCIBTUSB)	+= btusb.o
+---
+driver ehci-pci
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_EHCI_PCI)	+= ehci-pci.o
+---
+driver hsw_uncore
+---
+driver hub
+---
+driver i801_smbus
+---
+driver i8042
+drivers/input/serio/Makefile:obj-$(CONFIG_SERIO_I8042)	+= i8042.o
+---
+driver i915
+drivers/gpu/drm/i915/Makefile:obj-$(CONFIG_DRM_I915) += i915.o
+---
+driver iwlwifi
+drivers/net/wireless/intel/iwlwifi/Makefile:obj-$(CONFIG_IWLWIFI)	+= iwlwifi.o
+---
+driver lpc_ich
+drivers/mfd/Makefile:obj-$(CONFIG_LPC_ICH)		+= lpc_ich.o
+---
+driver mei_me
+drivers/misc/mei/Makefile:obj-$(CONFIG_INTEL_MEI_ME) += mei-me.o
+---
+driver pcieport
+---
+driver rtc_cmos
+drivers/rtc/Makefile:obj-$(CONFIG_RTC_DRV_CMOS)	+= rtc-cmos.o
+---
+driver snd_hda_intel
+sound/pci/hda/Makefile:obj-$(CONFIG_SND_HDA_INTEL) += snd-hda-intel.o
+---
+driver system
+---
+driver usbhid
+drivers/hid/usbhid/Makefile:obj-$(CONFIG_USB_HID)		+= usbhid.o
+---
+driver usb-storage
+drivers/usb/storage/Makefile:obj-$(CONFIG_USB_STORAGE)	+= usb-storage.o
+---
+driver uvcvideo
+drivers/media/usb/uvc/Makefile:obj-$(CONFIG_USB_VIDEO_CLASS) += uvcvideo.o
+---
+driver xhci_hcd
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_XHCI_HCD)	+= xhci-hcd.o

@@ -1,0 +1,20 @@
+---
+driver btusb
+drivers/bluetooth/Makefile:obj-$(CONFIG_BT_HCIBTUSB)	+= btusb.o
+---
+driver ehci-pci
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_EHCI_PCI)	+= ehci-pci.o
+---
+driver hub
+---
+driver usbhid
+drivers/hid/usbhid/Makefile:obj-$(CONFIG_USB_HID)		+= usbhid.o
+---
+driver usb-storage
+drivers/usb/storage/Makefile:obj-$(CONFIG_USB_STORAGE)	+= usb-storage.o
+---
+driver uvcvideo
+drivers/media/usb/uvc/Makefile:obj-$(CONFIG_USB_VIDEO_CLASS) += uvcvideo.o
+---
+driver xhci_hcd
+drivers/usb/host/Makefile:obj-$(CONFIG_USB_XHCI_HCD)	+= xhci-hcd.o
