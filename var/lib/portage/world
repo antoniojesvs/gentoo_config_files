@@ -1,6 +1,8 @@
 app-admin/sudo
 app-admin/sysklogd
 app-arch/p7zip
+app-containers/docker
+app-containers/docker-cli
 app-editors/nano
 app-editors/vim
 app-misc/neofetch
